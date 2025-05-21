@@ -1,0 +1,93 @@
+/* Reset default spacing on body/html */
+
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  font-family: sans-serif;
+  /* Remove color: white; to allow JS to control text color */
+}
+#intro {
+  scroll-margin-top: 80px;
+}
+/* Full-width header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em; /* Reduce padding for less height */
+  background-color: rgb(7,13,25);
+  color: inherit; /* Use inherit so it follows body color */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%; /* Important */
+  z-index: 1000;
+  opacity: 1;
+  transition: background-color 0.3s;
+}
+
+.light-mode .header {
+  background-color: #f5f5f5;
+}
+
+.dark-mode .header {
+  background-color: rgb(7,13,25);
+}
+
+/* Logo */
+.header__logo h1 {
+  font-family: 'Niconne', cursive;
+  font-size: 2.8rem;
+  color: inherit; /* Use inherit so it follows body color */
+  margin: 0;
+}
+
+/* Nav links */
+.header__nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+    margin-left: auto; /* Pushes nav to the far right */
+    justify-content: flex-end; /* Aligns items to the right */
+}
+
+.header__nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+/* Default hover (light mode) */
+.header__nav ul li a:hover {
+  color: #fc5c1c;
+}
+
+/* Dark mode hover */
+.dark-mode .header__nav ul li a:hover {
+text-decoration: underline;
+  text-decoration-color: #fc5c1c; /* color only for underline */
+  color: inherit; /* or set to your text color */
+}
+
+.light-mode .header__nav ul li a:hover {
+ text-decoration: underline;
+  text-decoration-color: #000; /* color only for underline */
+  color: inherit; /* or set to your text color */
+}
+
+/* Push page content below header */
+body {
+  padding-top: 80px;
+}

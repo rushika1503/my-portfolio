@@ -1,0 +1,91 @@
+/* Section wrapper */
+.about-section {
+  color: white;
+  padding: 4rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container with flex layout */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left side text block */
+.about-text {
+  flex: 1 1 55%;
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  letter-spacing: 0.2px;
+}
+
+/* Section heading */
+.section-title-h3 {
+  text-align: justify;
+    font-size: 2.2rem;
+  font-weight: 600;
+  color: #fc5c1c;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraph formatting */
+.about-paragraph {
+  margin-bottom: 1.25rem;
+  color: inherit;
+}
+
+/* Read More / Less Button */
+.toggle-button {
+  color: #fc5c1c;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  padding: 0;
+}
+
+.toggle-button:hover {
+  text-decoration: underline;
+}
+
+/* Image block */
+.about-image-wrapper {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  height: 500px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-text {
+    flex: 1 1 100%;
+    text-align: justify;
+  }
+
+  .about-image {
+    height: 320px;
+    margin-bottom: 2rem;
+  }
+}

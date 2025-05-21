@@ -1,0 +1,104 @@
+/* Section container */
+.page-section.page-content.intro-container {
+  /* min-height: 100vh; */
+  height: auto;
+  max-width: 1240px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  /* overflow-x: hidden; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+
+.intro-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+/* Intro line */
+.intro-main-line {
+  text-transform: capitalize;
+  letter-spacing: 0.04em;
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: inherit;
+}
+
+/* Typewriter container */
+.intro-typewriter {
+  color: #FC5C1C;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+/* Paragraph block */
+.intro-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+  color: inherit;
+}
+
+/* Social buttons */
+.intro-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.intro-socials a {
+  background: #fff;
+  border-radius: 50%;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.intro-socials a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(252,92,28,0.15);
+}
+
+.intro-socials svg, .intro-socials img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Adjust this value to match your navbar height */
+
+@media (max-width: 700px) {
+  .page-section.page-content.intro-container {
+    min-height: 90vh;
+    width: 98%;
+    padding: 0.5rem 0;
+  }
+  .intro-main-line {
+    font-size: 0.95rem;
+  }
+  .intro-typewriter {
+    font-size: 1.2rem;
+  }
+  .intro-description {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+}
