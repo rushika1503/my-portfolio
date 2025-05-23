@@ -2,7 +2,7 @@
   padding: 3rem 1rem;
   text-align: center;
   background: transparent;
-  color: #fff;
+  color: inherit;
 }
 
 .skills-section h3 {
@@ -49,8 +49,24 @@
 .learning-heading {
   margin-top: 3rem;
   font-size: 1.5rem;
-  /* color: #fc5c1c; */
   font-weight: 600;
+}
+
+/* Theme-specific color fixes */
+.light-mode .learning-heading {
+  color: #222;
+}
+
+.dark-mode .learning-heading {
+  color: #fff;
+}
+
+.light-mode .skills-section {
+  color: #222;
+}
+
+.dark-mode .skills-section {
+  color: #fff;
 }
 
 .learning-card {

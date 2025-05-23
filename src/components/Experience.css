@@ -18,11 +18,15 @@
 }
 
 .card-grid {
- display: flex;
+  display: flex;
   gap: 2rem;
   padding: 2rem;
-  justify-content: center;
+  justify-content: flex-start;
+  overflow-x: auto;
+   /* Allows horizontal scroll if too many cards */
+  flex-wrap: nowrap; /* ✅ Prevent wrapping */
 }
+
 
 .card-grid > cardMedia {
   flex: 1 1 0;
@@ -33,12 +37,21 @@
 }
 
 .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 300px;       /* ✅ Ensures consistent card width */
+  max-width: 400px;
+  flex: 0 0 auto;          /* ✅ Do not shrink, keep same row */
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.card-grid img {
+  height: 150px;
+  object-fit: contain; /* or 'cover' for a cropped look */
+  width: 100%;
+}
+
 
 .card:hover {
   transform: translateY(-5px);

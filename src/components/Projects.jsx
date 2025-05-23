@@ -1,4 +1,3 @@
-// FrontendProjects.jsx
 import './Projects.css';
 import productPreviewCardImage from '../assets/product.jpg';
 import bpcard from '../assets/bpCar.jpg';
@@ -35,33 +34,31 @@ export default function Projects() {
     <section className="frontend-projects-section" id="projects">
       <h3 className='section-title'>/Frontend Projects</h3>
       <p className="section-subtext">Small UI challenges completed using HTML & CSS.</p>
-      <div className="projects-grid marquee-wrapper">
-        {projects.map((project, index) => (
-          <a
-            href={project.liveLink}
-            key={index}
-            className="project-card"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={project.image} alt={project.title} />
-          </a>
-        ))}
+      <div className="marquee-wrapper">
+        <div className="projects-grid">
+          {projects.map((project, index) => (
+            <a
+              href={project.liveLink}
+              key={index}
+              className="project-card"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={project.image} alt={project.title} />
+            </a>
+          ))}
 
-        {projects.length > 0 && (
-          <>
-            <div className="project-card">
-              <Lottie
-                animationData={walkingGirls}
-                loop={true}
-                className="walking-animation"
-              />
-            </div>
-            <div className="project-card">
-              <p className="soon-text">More Projects Coming Soon...</p>
-            </div>
-          </>
-        )}
+          <div className="project-card">
+            <Lottie
+              animationData={walkingGirls}
+              loop={true}
+              className="walking-animation"
+            />
+          </div>
+          <div className="project-card">
+            <p className="soon-text">More Projects Coming Soon...</p>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -1,5 +1,4 @@
-
-.page-section {
+.page-section.contact-section {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -14,6 +13,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+  text-align: center;
 }
 
 .contact-form {
@@ -52,10 +52,10 @@
 
 .button-row {
   display: flex;
-  /* justify-content: space-between; */
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .contact-form button {
@@ -67,21 +67,27 @@
   transition: background-color 0.3s ease;
 }
 
-.reset-button {
-  background-color: #fff;
+/* Light theme style */
+.light-mode .reset-button {
+  background-color: #f0f0f0;
   color: #000;
   border: 1px solid #ccc;
 }
 
+/* Dark mode style */
+.dark-mode .reset-button {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #555;
+}
 
+.reset-button:hover {
+  background-color: #ddd;
+}
 
 .submit-button {
   background-color: #fc5c1c;
   color: #fff;
-}
-
-.reset-button:hover {
-  background-color: #eee;
 }
 
 .submit-button:hover {

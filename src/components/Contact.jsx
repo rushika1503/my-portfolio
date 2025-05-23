@@ -1,5 +1,3 @@
-
-
 import './Contact.css';
 
 const handleSubmit = async (event) => {
@@ -27,7 +25,7 @@ const handleSubmit = async (event) => {
 
 export default function Contact() {
   return (
-    <section id="contact" className="page-section">
+    <section id="contact" className="page-section contact-section">
       <div className="contact-wrapper">
         <h3 className="section-title">Send me a message!</h3>
         <p className="section-subtext">Got a question, idea, or just want to say hi? I’d love to hear from you.</p>
@@ -59,4 +57,3 @@ export default function Contact() {
     </section>
   );
 }
-

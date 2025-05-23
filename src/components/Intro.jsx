@@ -50,8 +50,6 @@ export default function Intro() {
         <div className="intro-socials">
           <a href="https://www.linkedin.com/in/rushika-sirigadde/" target="_blank" rel="noopener noreferrer"><FaLinkedin style={{ color: '#0A66C2' }} /></a>
           <a href="https://github.com/rushika1503" target="_blank" rel="noopener noreferrer"><FaGithub style={{ color: '#222' }} /></a>
-          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><FaTwitter style={{ color: '#1CA4F4' }} /></a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><FaInstagram style={{ color: '#E1306C' }} /></a>
         </div>
       </div>
     </section>

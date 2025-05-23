@@ -203,6 +203,101 @@ nav, .navbar, .navbar-nav {
   }
 }
 
+/* Base styles for mobile-first design */
+html, body {
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+main, section, .page-section {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  box-sizing: border-box;
+}
+
+/* Responsive headings */
+h1, h2, h3, h4, h5, h6 {
+  word-break: break-word;
+}
+
+/* Responsive images and videos */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive grid and flex layouts */
+.card-grid, .skills-grid, .projects-grid, .about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Responsive cards */
+.card, .project-card {
+  min-width: 220px;
+  max-width: 100%;
+  flex: 1 1 300px;
+  margin: 0.5rem 0;
+}
+
+/* Responsive forms */
+input, textarea, button {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+/* Responsive navbar */
+nav, .navbar {
+  flex-wrap: wrap;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  .card-grid, .skills-grid, .projects-grid, .about-container {
+    gap: 0.8rem;
+  }
+  .card, .project-card {
+    min-width: 180px;
+    flex: 1 1 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  main, section, .page-section {
+    padding: 1rem 0.5rem;
+  }
+  .card-grid, .skills-grid, .projects-grid, .about-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+  .card, .project-card {
+    min-width: 0;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  nav, .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.95rem;
+  }
+  h1, h2, h3 {
+    font-size: 1.3rem;
+  }
+}
+
 /* All sections/components inherit */
 section, .page-section, .about-section, .skills-section, .frontend-projects-section {
   background: var(--bg-color);
