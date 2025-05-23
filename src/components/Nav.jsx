@@ -34,7 +34,7 @@ export default function Nav() {
                     <li><a href="#experience" onClick={e => { e.preventDefault(); document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' }); }}>EXPERIENCE</a></li>
                     <li><a href="#projects" onClick={e => { e.preventDefault(); document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }); }}>PROJECTS</a></li>
                     <li><a href="#contact" onClick={e => { e.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>CONTACT</a></li>
-                    <li><a href="#faq" onClick={e => { e.preventDefault(); document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' }); }}>FAQ'S</a></li>
+                    {/* <li><a href="#faq" onClick={e => { e.preventDefault(); document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' }); }}>FAQ'S</a></li> */}
                     <li>
                         <a href="#theme" onClick={e => { e.preventDefault(); setIsDark(v => !v); }}>
                             <i className={isDark ? "fa-solid fa-sun" : "fa-solid fa-moon"}></i>

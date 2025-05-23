@@ -105,7 +105,12 @@ html, body {
   height: auto;
   min-width: 320px;
   scroll-behavior: smooth;
-overflow-y: auto;
+/* overflow-y: auto; */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+
 }
 
 body {
