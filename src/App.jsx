@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 import Nav from './components/Nav.jsx'
-import Navs from './components/Navs.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Skills from './components/Skills.jsx';
@@ -16,7 +15,6 @@ function App() {
   return (
     <>
       <Nav />
-      {/* <Navs /> */}
       <main>
      
         <Intro />
