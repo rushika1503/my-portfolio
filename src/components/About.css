@@ -1,6 +1,6 @@
 /* Section wrapper */
 .about-section {
-  color: white;
+  /* color: white; */
   padding: 4rem 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -37,7 +37,7 @@
 /* Paragraph formatting */
 .about-paragraph {
   margin-bottom: 1.25rem;
-  color: inherit;
+  /* color: inherit; */
 }
 
 /* Read More / Less Button */

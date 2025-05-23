@@ -1,5 +1,16 @@
+body.light-theme {
+  --bg-color: #fff;
+  --text-color: #222;
+}
+
+body.dark-theme {
+  --bg-color: #10141a;
+  --text-color: #f3f3f3;
+}
+
 body {
-  background-color: rgb(7,13,25);
+  background: var(--bg-color);
+  color: var(--text-color);
   /* overflow-x: hidden; */
    /* Prevent horizontal scroll bar */
 }
@@ -46,9 +57,9 @@ body {
   padding: 2em;
 }
 
-.read-the-docs {
+/* .read-the-docs {
   color: #888;
-}
+} */
 
 .page-section {
   min-height: 100vh;
@@ -185,4 +196,10 @@ nav, .navbar, .navbar-nav {
     padding: 0.7rem 0.2rem;
     font-size: 0.95rem;
   }
+}
+
+/* All sections/components inherit */
+section, .page-section, .about-section, .skills-section, .frontend-projects-section {
+  background: var(--bg-color);
+  color: var(--text-color);
 }
