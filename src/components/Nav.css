@@ -1,7 +1,6 @@
-/* Reset default spacing on body/html */
-
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -11,54 +10,75 @@
 html, body {
   width: 100%;
   font-family: sans-serif;
-  /* Remove color: white; to allow JS to control text color */
+  scroll-behavior: smooth;
 }
+
+body {
+  padding-top: 80px;
+}
+
 #intro {
   scroll-margin-top: 80px;
 }
-/* Full-width header */
+
+/* Header */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 2em; /* Reduce padding for less height */
-  background-color: rgb(7,13,25);
-  color: inherit; /* Use inherit so it follows body color */
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  width: 100%; /* Important */
+  width: 100%;
+  background-color: rgb(7, 13, 25);
   z-index: 1000;
-  opacity: 1;
   transition: background-color 0.3s;
 }
 
 .light-mode .header {
   background-color: #f5f5f5;
+  color: black;
 }
 
 .dark-mode .header {
-  background-color: rgb(7,13,25);
+  background-color: rgb(7, 13, 25);
+  color: white;
 }
 
-/* Logo */
-.header__logo h1 {
+/* Header container with responsive padding */
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__container {
+    padding: 2em 10em;
+  }
+}
+
+/* Logo section */
+.header__logo {
+  flex-shrink: 0;
+  min-width: 120px;
+}
+
+
+.header__logo a {
   font-family: 'Niconne', cursive;
   font-size: 2.8rem;
-  color: inherit; /* Use inherit so it follows body color */
   margin: 0;
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Nav links */
 .header__nav ul {
   list-style: none;
   display: flex;
+  justify-content: flex-end;
   gap: 2em;
   margin: 0;
   padding: 0;
-    margin-left: auto; /* Pushes nav to the far right */
-    justify-content: flex-end; /* Aligns items to the right */
 }
 
 .header__nav ul li a {
@@ -66,28 +86,66 @@ html, body {
   color: inherit;
   font-weight: 600;
   letter-spacing: 1px;
+  cursor: pointer;
   transition: color 0.3s;
 }
 
-/* Default hover (light mode) */
+/* Hover styles */
 .header__nav ul li a:hover {
   color: #fc5c1c;
 }
 
-/* Dark mode hover */
 .dark-mode .header__nav ul li a:hover {
-text-decoration: underline;
-  text-decoration-color: #fc5c1c; /* color only for underline */
-  color: inherit; /* or set to your text color */
+  text-decoration: underline;
+  text-decoration-color: #fc5c1c;
+  color: inherit;
 }
 
 .light-mode .header__nav ul li a:hover {
- text-decoration: underline;
-  text-decoration-color: #000; /* color only for underline */
-  color: inherit; /* or set to your text color */
+  text-decoration: underline;
+  text-decoration-color: #000;
+  color: inherit;
 }
 
-/* Push page content below header */
-body {
-  padding-top: 80px;
+/* Hamburger icon for mobile */
+.hamburger {
+  display: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* Responsive styles for mobile */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .header__nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(7, 13, 25);
+    max-height: 100px;
+    overflow-x: auto;
+    transition: max-height 0.3s ease;
+    padding: 0.5rem 1rem;
+  }
+
+  .light-mode .header__nav {
+    background-color: #f5f5f5;
+  }
+
+  .header__nav ul {
+    flex-direction: row !important;
+    justify-content: flex-start;
+    gap: 1rem;
+    white-space: nowrap;
+    overflow-x: auto;
+    width: max-content;
+  }
+
+  .header__nav ul li a {
+    font-size: 0.9rem;
+  }
 }
