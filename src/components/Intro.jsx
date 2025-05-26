@@ -45,8 +45,12 @@ export default function Intro() {
           <span className="blinking-cursor">|</span>
         </h1>
         <p className="intro-description">
-          I am a software developer specialized in building unique and brilliant websites and mobile apps to meet the expectations of clients, employers and users. I am focused <span className="capitalize font-semibold text-blue-300">(following one course until success)</span> on building responsive front-end applications while consistently learning back-end technologies.
+I’m a passionate and results-driven Software Developer specializing in crafting unique, high-performance websites and mobile applications. I thrive on delivering solutions that not only meet but exceed the expectations of clients, employers, and end users. My core strength lies in building responsive, user-centric front-end applications, while actively expanding my expertise in back-end technologies to become a well-rounded full-stack developer.
+
+<br/>Let’s connect if you’re looking for someone who combines creativity, technical skill, and a commitment to continuous improvement.
+
         </p>
+
         <div className="intro-socials">
           <a href="https://www.linkedin.com/in/rushika-sirigadde/" target="_blank" rel="noopener noreferrer"><FaLinkedin style={{ color: '#0A66C2' }} /></a>
           <a href="https://github.com/rushika1503" target="_blank" rel="noopener noreferrer"><FaGithub style={{ color: '#222' }} /></a>

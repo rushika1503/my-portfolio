@@ -6,7 +6,7 @@ const About = () => {
   const [readMore, setReadMore] = useState(false);
 
   const shortText = [
-    `👋 Hi there! I'm Rushika Sirigadde, a passionate frontend and full stack developer currently pursuing my Master’s in Information Studies at Trine University, With hands-on experience building responsive and accessible web apps, I love creating user-centric designs.`,
+    `👋Hello! I'm Rushika Sirigadde, a passionate frontend and full stack developer with 4 years of professional experience and a recent graduate in Master’s in Information Studies. With hands-on experience building responsive and accessible web apps, I love creating user-centric designs.`,
   ];
 
   const fullText = [

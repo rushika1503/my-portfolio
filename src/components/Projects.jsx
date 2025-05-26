@@ -32,7 +32,7 @@ const projects = [
 export default function Projects() {
   return (
     <section className="frontend-projects-section" id="projects">
-      <h3 className='section-title'>/Frontend Projects</h3>
+      <h3 className='section-title'>Frontend Projects</h3>
       <p className="section-subtext">Small UI challenges completed using HTML & CSS.</p>
       <div className="marquee-wrapper">
         <div className="projects-grid">
