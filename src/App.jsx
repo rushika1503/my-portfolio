@@ -9,7 +9,6 @@ import Intro from './components/Intro.jsx'
 import Experience from './components/Experience.jsx';
 import Projects from './components/Projects.jsx';
 import About from './components/About.jsx';
-import { Analytics } from "@vercel/analytics/next"
 function App() {
   const [count, setCount] = useState(0)
 
