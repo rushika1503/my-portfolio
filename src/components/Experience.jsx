@@ -2,40 +2,44 @@ import './Experience.css';
 import { FaMapMarkerAlt, FaRegCalendarAlt } from 'react-icons/fa';
 
 const experiences = [
+   {
+    company: 'Lotus Tech Services',
+    title: 'Full Stack Engineer (AI Focus)',
+    duration: 'Aug 2025 – Till Date',
+    location: 'United States',
+    highlights: [
+      'Architected a secure health application using Next.js,React and TypeScript, achieving a 35% increase in page-load speeds. 
+      'Leveraged Python based AI APIs to perform automated data validation on uploaded medical files, ensuring 99.9% accuracy in document categorization.',
+      'Engineered scalable Node.js file-upload pipelines and optimized MongoDB schemas to handle large-scale medical datasets with 100% integrity. '
+      'Orchestrated background tasks via AWS SNS/SQS, ensuring UI responsiveness during complex data validation.'
+      'Automated the CI/CD lifecycle using GitHub Actions and Jenkins, reducing manual deployment effort by 50%. '
+      'Optimized system reliability & uptime to 99.9% by implementing robust error-handling and monitoring protocols. '
+    ]
+  },
   {
     company: 'Qentelli',
     title: 'Software Engineer',
     duration: 'Jun 2022 – May 2023',
     location: 'Hyderabad, Telangana, India',
     highlights: [
-      'Developed a responsive web application that improved system performance by 70% and reduced troubleshooting time by 50%.',
-      'Analyzed procurement data with Node.js and JMeter, and visualized insights using Apache ECharts.',
-      'Built a Vue.js load testing dashboard and implemented drag-and-drop using Vue-Draggable.',
-      'Collaborated with backend engineers to optimize API efficiency and implemented Socket.io notification flows.',
-      'Developed JavaScript automation that improved real user experience by 90%, using Vue.js and REST APIs.'
+     'Spearheaded the development of a high-performance Vue.js SPA, achieving a 70% increase in system throughput. '
+'Implemented real-time monitoring flows via Socket.io to track CRUD operations, reducing critical incident response times by 80%. '
+'Launched a performance-analytics dashboard integrated with JMeter and Node.js, enabling real-time load testing and stability assessment under high-concurrency procurement loads. '
+'Developed interactive, data-intensive visualizations using APACHE ECharts, converting complex engineering datasets into actionable executive-level insights. '
+'Optimized Real User Experience (RUX) monitoring via custom scripts, resulting in a 90% boost in user engagement. '
+'Streamlined frontend-to-backend data flow by optimizing PostgreSQL queries and RESTful API consumption, reducing data retrieval latency by 40%.  '
     ]
   },
   {
     company: 'Accenture',
     title: 'Application Development Analyst',
-    duration: 'Jul 2021 – Jun 2022',
+    duration: 'Nov 2020 – Jun 2022',
     location: 'Hyderabad, Telangana, India',
     highlights: [
-      'Designed and implemented web pages using HTML5, CSS3, JavaScript, React.js, Redux, and SASS.',
-      'Developed multiple frontend screens and reusable components using React.js and NPM packages.',
-      'Implemented stable React components and used JEST for unit testing and debugging.',
-      'Collaborated with business teams and project managers in an Agile Scrum environment.'
-    ]
-  },
-  {
-    company: 'Accenture',
-    title: 'Software Engineer',
-    duration: 'Nov 2020 – Jul 2021',
-    location: 'Hyderabad, Telangana, India',
-    highlights: [
-      'Built dynamic UI screens using Wavemaker and JavaScript with HTML/CSS.',
-      'Implemented secure login screens with validation and used MySQL queries for data handling.',
-      'Tested APIs using Postman and managed JSON/XML data flows.'
+      'Specialized in the WaveMaker platform for 1.5+ years, building enterprise Insurance Policy portals and extending core functionality through custom Angular components and TypeScript modules.' 
+'Designed modular UI components with React for logistics and claims processing, utilizing RESTful APIs to improve data retrieval speeds by 30% for over 5,000 internal users. '
+'Containerized legacy services using Docker and automated unit testing via GitHub Actions, leading to a 35% reduction in production-level defect.'
+'Ensured all UI/UX components met strict WCAG 2.1 accessibility and branding standards for global insurance clients.'
     ]
   },
   {
@@ -44,8 +48,9 @@ const experiences = [
     duration: 'Jan 2019 – Jun 2019',
     location: 'Hyderabad, Telangana, India',
     highlights: [
-      'Developed a library management system using C#, MySQL, HTML/CSS.',
-      'Created dashboards with multi-level authentication and materialized views for procurement data.'
+      'Rapidly developed web-based insurance policy prototypes using WaveMaker and JavaScript, streamlining the proof-of concept phase for new client acquisitions. '
+'Assisted in mapping & migrating legacy data structures into modern REST APIs, ensuring seamless data flow. '
+'Refined layouts using CSS3 & HTML5 Flexbox/Grid, improving cross-browser compatibility & user engagement by 15%.'
     ]
   }
 ];
