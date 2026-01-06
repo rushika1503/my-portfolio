@@ -8,7 +8,7 @@ const experiences = [
     duration: 'Aug 2025 – Till Date',
     location: 'United States',
     highlights: [
-      'Architected a secure health application using Next.js,React and TypeScript, achieving a 35% increase in page-load speeds. 
+      'Architected a secure health application using Next.js,React and TypeScript, achieving a 35% increase in page-load speeds. '
       'Leveraged Python based AI APIs to perform automated data validation on uploaded medical files, ensuring 99.9% accuracy in document categorization.',
       'Engineered scalable Node.js file-upload pipelines and optimized MongoDB schemas to handle large-scale medical datasets with 100% integrity. '
       'Orchestrated background tasks via AWS SNS/SQS, ensuring UI responsiveness during complex data validation.'
