@@ -37,14 +37,14 @@ export default function Skills() {
         ))}
       </div>
 
-      <h5 className="learning-heading">Currently Learning</h5>
+      {/* <h5 className="learning-heading">Currently Learning</h5>
       <div className="skills-grid">
         {learning.map((item, index) => (
           <div className="skill-card learning-card" key={index}>
             {item}
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }

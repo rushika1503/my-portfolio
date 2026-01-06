@@ -59,7 +59,7 @@ export default function Experience() {
   return (
     <section id="experience" className="page-section">
       <h3 className="section-title">Professional Experience.</h3>
-      <p className="section-subtext">Selected work I've taken in the past.</p>
+      <p className="section-subtext">Selected work I've taken.</p>
 
       <div className="experience-summary-container">
         {experiences.map((exp, index) => (
@@ -68,7 +68,7 @@ export default function Experience() {
             <p className="experience-summary-title">{exp.title}</p>
             <p className="experience-location">
               <FaMapMarkerAlt className="icon" />
-              {exp.location} {' | '}
+              {exp.location}  {' | '}
               <FaRegCalendarAlt className="icon calendar" />
               {exp.duration}
             </p>
